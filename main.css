@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    display: block;
+    margin-bottom: 3px;
+}
+
+section .container {
+    margin-top: 38px;
+}
+
+section img {
+    margin-right: 24px;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+}
+
+.paragrafo {
+    padding-top: 16px;
+}
+
+.promocoes {
+    margin-top: 32px;
+}
+
+.lista img {
+    max-width: 100%;
+}
+
+.lista-promocoes {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+button {
+    width: 100%;
+    padding: 6px;
+    margin-top: 8px;
+    border: none;
+    background-color: #ccc;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.price del {
+        font-size: 14px;
+        color: #ccc;
+        margin-right: 12px;
+    }
+
+    .lista p {
+        padding: 6px 0;
+    }
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-loja {
+        display: block;
+    }
+
+    .sobre-loja img {
+        max-width: 90%;
+        margin-bottom: 16px;
+    }
+
+    .lista-promocoes {
+        display: block;
+    }
+
+    .conteudo {
+        justify-content: center;
+    }
+
+    button {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-loja {
+        display: block;
+    }
+
+    .lista-promocoes {
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+}
